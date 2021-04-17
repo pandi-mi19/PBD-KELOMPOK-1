@@ -1,5 +1,5 @@
 <?php
-require("../sistem/koneksi.php");
+require("koneksi/koneksi.php");
 
 $hub = open_connection();
 $a = @$_GET["a"];
@@ -45,7 +45,7 @@ function read_data() {
 	<h2>Read Data Program Studi</h2>
 	<table border=1 cellpadding=2>
 		<tr>
-			<td colspan="5"><a href="19753051_curd_4.php?a=input">INPUT</a></td>
+			<td colspan="5"><a href="index.php?a=input">INPUT</a></td>
 		</tr>
 		<tr>
 			<td>ID</td>
@@ -61,8 +61,8 @@ function read_data() {
 			<td><?php echo $row['nmprodi']; ?></td>
 			<td><?php echo $row['akreditasi']; ?></td>
 			<td>
-				<a href="19753051_curd_4.php?a=edit&id=<?php echo $row ['idprodi']; ?>">EDIT</a>
-				<a href="19753051_curd_4.php?a=hapus&id=<?php echo $row ['idprodi']; ?>">HAPUS</a>
+				<a href="index.php?a=edit&id=<?php echo $row ['idprodi']; ?>">EDIT</a>
+				<a href="index.php?a=hapus&id=<?php echo $row ['idprodi']; ?>">HAPUS</a>
 			</td>
 		</tr>
 		<?php } ?>
@@ -78,7 +78,7 @@ function input_data() {
 		); ?>
 
 	<h2>Input Data Program Studi</h2>
-	<form action="19753051_curd_4.php?a=list" method="post"> 
+	<form action="index.php?a=list" method="post"> 
 		<input type="hidden" name="sql" value="create"> 
 		Kode Prodi
 		<input type="text" name="kdprodi" maxlength="6" size="6" value="<?php echo trim($row["kdprodi"]) ?>" />
@@ -94,7 +94,7 @@ function input_data() {
 		<br>
 		<input type="submit" name="action" value="Simpan">
 		<br>
-		<a href="19753051_curd_4.php?a=list">Batal</a>
+		<a href="index.php?a=list">Batal</a>
 	</form>
 <?php } ?>
 
@@ -106,7 +106,7 @@ function edit_data($id) {
 	$row = mysqli_fetch_array($result); ?>
 
 	<h2>Edit Data Program Studi</h2>
-	<form action="19753051_curd_4.php?a=list" method="post">
+	<form action="index.php?a=list" method="post">
 		<input type="hidden" name="sql" value="update">
 		<input type="hidden" name="idprodi" value="<?php echo trim($id) ?>">
 		Kode Prodi
@@ -123,7 +123,7 @@ function edit_data($id) {
 		<br>
 		<input type="submit" name="action" value="Simpan">
 		<br>
-		<a href="19753051_curd_4.php?a=list">Batal</a>
+		<a href="index.php?a=list">Batal</a>
 	</form>
 <?php } ?>
 
@@ -135,7 +135,7 @@ function hapus_data($id) {
 	$row = mysqli_fetch_array($result); ?>
 
 	<h2> Hapus Data Program Studi </h2>
-	<form action="19753051_curd_4.php?a=list" method="post">
+	<form action="index.php?a=list" method="post">
 		<input type="hidden" name="sql" value="delete">
 		<input type="hidden" name="idprodi" value="<?php echo trim($id) ?>">
 		<table>
@@ -155,7 +155,7 @@ function hapus_data($id) {
 		<br>
 		<input type="submit" name="action" value="Hapus">
 		<br>
-		<a href="19753051_curd_4.php?a=list">Batal</a>
+		<a href="index.php?a=list">Batal</a>
 	</form>
 <?php } ?>
 
