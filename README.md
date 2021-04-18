@@ -1,7 +1,7 @@
 # PBD-KELOMPOK-1
-ini project kelompok 1
+Ini project kelompok 1
 
-Nama Kelompok :
+Nama Anggota Kelompok:
 1. Pandi Kurniawan
 2. Ikhsan Nur Fajri
 3. Pingko Sony Pratama
@@ -34,4 +34,4 @@ Dari tiga ragam jenis SMBD diatas terdapat beberapa model arsitektur aplikasi SM
 
 Pada sistem ini semua proses utama dan fungsi sistem manajemen basis data seperti user application programs dan user interface programs berada secara terpusat di satu komputer berkecepatan dan kapasitas tinggi (main frame). Pengguna mengakses basis data menggunakan terminal komputer. Pada arsitektur ini digunakan komputer main frame yg menyediakan semua proses utama seperti fungsinya pada DBMS (user application programs & user interface programs). Bentuk arsitektur terpusat ini menggambarkan pengaksesan terminal-terminal komputer (client) pada komputer server, berupa display informasi dan kontrol saja, karena pada terminal komputer tidak memungkinkan memiliki resource yang lebih. 
  
-Seiring perkembangan teknologi dan turunnya harga hardware, banyak terminal user digantikan dengan PC, akan tetapi DBMS masih ditempatkan terpusat (Application program execution & user interface processing ditempatkan pada satu mesin). Gambar 5.1. menjelaskan bagaimana arsitektur Centralized Database manajemen Sistem (CDBMS) dibangun. 
+Seiring perkembangan teknologi dan turunnya harga hardware, banyak terminal user digantikan dengan PC, akan tetapi DBMS masih ditempatkan terpusat (Application program execution & user interface processing ditempatkan pada satu mesin). Pada gambar di atas menjelaskan bagaimana arsitektur Centralized Database manajemen Sistem (CDBMS) dibangun. 
