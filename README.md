@@ -11,6 +11,9 @@ Nama Kelompok :
 
 Description:
 
+![image](https://user-images.githubusercontent.com/57824066/115132908-85e13200-a02e-11eb-9056-db28df62bbcb.png)
+
+
 *Arsitektur Sistem Basis Data
 
 Arsitektur aplikasi basis data menjelaskan rancangan dasar aplikasi basis data yang akan dibangun. Arsitektur basis data menggambarkan diagram interaksi antara komponen-komponen penyusun sistem manajemen basis data. Komponenkomponen tersebut meliputi perangkat hardware, software, jaringan komputer, dan pengguna. Berdasarkan arsitekturnya aplikasi sistem manajemen basis data (SMBD) dibedakan menjadi beberapa macam antara lain adalah sebagai berikut: 
