@@ -24,6 +24,7 @@
 			<table class="full">
 			<label for="">Username</label>
 			<input type="text" name="username" placeholder="Username" required="" class="full">
+				<br>
 			<label for="">Password</label>
 			<input type="password" name="password" placeholder="Password" required="" class="full">
 			<br><br>
