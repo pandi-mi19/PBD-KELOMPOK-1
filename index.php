@@ -1,11 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Login</title>
 	<link rel="stylesheet" href="style.css">
-	<link rel="icon" href="assets/polinela.png">
+	<link rel="icon" href="assets/login-icon.gif">
+	<style>
+	body {
+	background: url(bgrn.jpg);
+	background-size: cover;
+	background-position : center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	}
+	</style>
+
 </head>
 <body>
 	
@@ -24,7 +33,6 @@
 			<table class="full">
 			<label for="">Username</label>
 			<input type="text" name="username" placeholder="Username" required="" class="full">
-				<br>
 			<label for="">Password</label>
 			<input type="password" name="password" placeholder="Password" required="" class="full">
 			<br><br>
