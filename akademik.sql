@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 19 Apr 2021 pada 13.50
+-- Waktu pembuatan: 22 Apr 2021 pada 03.39
 -- Versi server: 10.4.14-MariaDB
 -- Versi PHP: 7.2.33
 
@@ -39,8 +39,12 @@ CREATE TABLE `dt_prodi` (
 --
 
 INSERT INTO `dt_prodi` (`idprodi`, `kdprodi`, `nmprodi`, `akreditasi`) VALUES
-(13, 'KP0001', 'Manajemen Informatika', 'A'),
-(15, 'KP0002', 'Agribisnis Pangan', 'A');
+(13, 'KP0001', 'Manajemen Informatika', 'B'),
+(15, 'KP0002', 'Agribisnis Pangan', 'A'),
+(16, 'KP0003', 'Akuntansi', 'B'),
+(17, 'KP0004', 'Akuntansi Pajak', 'A'),
+(18, 'KP0005', 'Agribisnis', 'B'),
+(19, 'KP0006', 'Perjalanan Wisata', '-');
 
 -- --------------------------------------------------------
 
@@ -92,15 +96,16 @@ ALTER TABLE `dt_user`
 -- AUTO_INCREMENT untuk tabel `dt_prodi`
 --
 ALTER TABLE `dt_prodi`
-  MODIFY `idprodi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `idprodi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT untuk tabel `dt_user`
 --
 ALTER TABLE `dt_user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
