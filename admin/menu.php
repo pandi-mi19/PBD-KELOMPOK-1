@@ -18,6 +18,7 @@
 	  <ul class="nav navbar-nav">
 		<li><a href="./admin.php">Beranda</a></li>
 		<li><a href="./admin.php?hlm=dt_prodi">Prodi</a></li>
+		<li><a href="./admin.php?hlm=mahasiswa_view">Mahasiswa</a></li>
         <?php
         if( $_SESSION['level'] == "admin" ){
         ?>
@@ -25,6 +26,7 @@
 		  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data Master <b class="caret"></b></a>
 		  <ul class="dropdown-menu">
 			<li><a href="./admin.php?hlm=prodi">Data Prodi</a></li>
+			<li><a href="./admin.php?hlm=mahasiswa">Data Mahasiswa</a></li>
 			<li><a href="./admin.php?hlm=user">Data User</a></li>
 			<?php
 			}
