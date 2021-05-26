@@ -65,6 +65,12 @@ if( empty( $_SESSION['id_user'] ) ){
 			case 'dt_prodi':
 				include "dt_prodi.php";
 				break;
+			case 'mahasiswa':
+				include "mahasiswa.php";
+				break;
+			case 'mahasiswa_view':
+				include "mahasiswa_view.php";
+				break;
 		}
 	} else {
 	?>
